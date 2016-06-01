@@ -1,3 +1,5 @@
+package ua.epam.spring.core.beans;
+
 /**
  * Created by Maksim_Sialiuk on 5/31/2016.
  */
