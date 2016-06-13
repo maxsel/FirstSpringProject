@@ -1,13 +1,16 @@
 package ua.epam.spring.core.loggers;
 
+import org.springframework.stereotype.Component;
 import ua.epam.spring.core.Event;
 
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Maksim_Sialiuk on 6/3/2016.
  */
+@Component("cacheFileEventLogger")
 public class CacheFileEventLogger extends FileEventLogger {
     private int cacheSize;
     private List<Event> cache;
@@ -34,6 +37,7 @@ public class CacheFileEventLogger extends FileEventLogger {
         }
     }
 
+    @PreDestroy
     public void destroy() {
         if (!cache.isEmpty()) {
             writeEventsFromCache();
