@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c9f884d-72e4-4d75-9319-88aebe79e797" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/spring/core/util/AwareBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ua/epam/spring/core/util/Monitor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/client.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" />
     </list>
     <ignored path="FirstSpringProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -819,7 +814,7 @@
       <workItem from="1464770024202" duration="5964000" />
       <workItem from="1464951355891" duration="6845000" />
       <workItem from="1465805571384" duration="209000" />
-      <workItem from="1465806038687" duration="2831000" />
+      <workItem from="1465806038687" duration="2876000" />
     </task>
     <task id="LOCAL-00001" summary="second day (until FileEL)">
       <created>1464775967060</created>
@@ -835,11 +830,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464958977858</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="before Annotation Based Configuration">
+      <created>1465808931713</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1465808931713</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16668000" />
+    <option name="totallyTimeSpent" value="16713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -887,7 +889,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="second day (until FileEL)" />
     <MESSAGE value="third day (until Advanced Context)" />
-    <option name="LAST_COMMIT_MESSAGE" value="third day (until Advanced Context)" />
+    <MESSAGE value="before Annotation Based Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="before Annotation Based Configuration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
