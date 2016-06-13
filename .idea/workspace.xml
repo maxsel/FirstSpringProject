@@ -719,8 +719,12 @@
       <workItem from="1464770024202" duration="5964000" />
       <workItem from="1464951355891" duration="6845000" />
       <workItem from="1465805571384" duration="209000" />
+<<<<<<< HEAD
       <workItem from="1465806038687" duration="13813000" />
       <workItem from="1465939446033" duration="3182000" />
+=======
+      <workItem from="1465806038687" duration="2876000" />
+>>>>>>> a093f7f... before Annotation Based Configuration
     </task>
     <task id="LOCAL-00001" summary="second day (until FileEL)">
       <created>1464775967060</created>
@@ -743,6 +747,7 @@
       <option name="project" value="LOCAL" />
       <updated>1465808931713</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00004" summary="before Annotation Based Configuration">
       <created>1465808947345</created>
       <option name="number" value="00004" />
@@ -762,6 +767,13 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="30832000" />
+=======
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16713000" />
+>>>>>>> a093f7f... before Annotation Based Configuration
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="7" />
@@ -811,8 +823,12 @@
     <MESSAGE value="second day (until FileEL)" />
     <MESSAGE value="third day (until Advanced Context)" />
     <MESSAGE value="before Annotation Based Configuration" />
+<<<<<<< HEAD
     <MESSAGE value="after ABC" />
     <option name="LAST_COMMIT_MESSAGE" value="after ABC" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="before Annotation Based Configuration" />
+>>>>>>> a093f7f... before Annotation Based Configuration
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
