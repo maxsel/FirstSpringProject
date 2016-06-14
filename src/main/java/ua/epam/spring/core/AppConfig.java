@@ -2,9 +2,12 @@ package ua.epam.spring.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import org.springframework.beans.factory.annotation.Qualifier;
 >>>>>>> 7333fda... not understand @Component and @Bean
+=======
+>>>>>>> 58c33ab... after ABC
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import ua.epam.spring.core.beans.Client;
@@ -43,10 +46,14 @@ public class AppConfig {
     private ConsoleEventLogger consoleLogger;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private Map loggerMap() {
 =======
     public Map loggerMap() {
 >>>>>>> 7333fda... not understand @Component and @Bean
+=======
+    private Map loggerMap() {
+>>>>>>> 58c33ab... after ABC
         HashMap<EventType, EventLogger> map = new HashMap<EventType, EventLogger>();
         map.put(EventType.INFO, consoleLogger);
         map.put(EventType.ERROR, combinedLogger);

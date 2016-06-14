@@ -14,14 +14,20 @@ import java.util.Arrays;
 public class LoggersConfig {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 58c33ab... after ABC
     @Bean
     public ConsoleEventLogger consoleEventLogger() {
         return new ConsoleEventLogger();
     }
+<<<<<<< HEAD
 =======
     @Autowired
     public ConsoleEventLogger consoleEventLogger;
 >>>>>>> 7333fda... not understand @Component and @Bean
+=======
+>>>>>>> 58c33ab... after ABC
 
     @Bean(initMethod = "init")
     public FileEventLogger fileEventLogger() {
@@ -36,9 +42,13 @@ public class LoggersConfig {
     @Bean
     public CombinedEventLogger combinedEventLogger() {
 <<<<<<< HEAD
+<<<<<<< HEAD
         return new CombinedEventLogger(Arrays.asList(consoleEventLogger(), cacheFileEventLogger()));
 =======
         return new CombinedEventLogger(Arrays.asList(consoleEventLogger, cacheFileEventLogger()));
 >>>>>>> 7333fda... not understand @Component and @Bean
+=======
+        return new CombinedEventLogger(Arrays.asList(consoleEventLogger(), cacheFileEventLogger()));
+>>>>>>> 58c33ab... after ABC
     }
 }
