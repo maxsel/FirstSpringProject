@@ -13,8 +13,10 @@ import java.util.Arrays;
 @Configuration
 public class LoggersConfig {
 
-    @Autowired
-    public ConsoleEventLogger consoleEventLogger;
+    @Bean
+    public ConsoleEventLogger consoleEventLogger() {
+        return new ConsoleEventLogger();
+    }
 
     @Bean(initMethod = "init")
     public FileEventLogger fileEventLogger() {
@@ -28,6 +30,6 @@ public class LoggersConfig {
 
     @Bean
     public CombinedEventLogger combinedEventLogger() {
-        return new CombinedEventLogger(Arrays.asList(consoleEventLogger, cacheFileEventLogger()));
+        return new CombinedEventLogger(Arrays.asList(consoleEventLogger(), cacheFileEventLogger()));
     }
 }

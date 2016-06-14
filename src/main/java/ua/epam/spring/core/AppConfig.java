@@ -1,7 +1,6 @@
 package ua.epam.spring.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import ua.epam.spring.core.beans.Client;
@@ -39,7 +38,7 @@ public class AppConfig {
     @Autowired
     private ConsoleEventLogger consoleLogger;
 
-    public Map loggerMap() {
+    private Map loggerMap() {
         HashMap<EventType, EventLogger> map = new HashMap<EventType, EventLogger>();
         map.put(EventType.INFO, consoleLogger);
         map.put(EventType.ERROR, combinedLogger);
