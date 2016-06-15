@@ -25,4 +25,9 @@
         </constructor-arg>
     </bean>
 
+    <bean id="dbLogger" class="ua.epam.spring.core.loggers.DBLogger"
+          init-method="init" destroy-method="destroy">
+        <property name="jdbcTemplate" ref="jdbcTemplate" />
+    </bean>
+
 </beans>

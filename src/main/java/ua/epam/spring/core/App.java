@@ -49,8 +49,7 @@ public class App {
 
         app.logEvent(event1, EventType.INFO);
         app.logEvent(event2, EventType.ERROR);
-        app.logEvent(event2, EventType.INFO);
-        app.logEvent(event2, EventType.INFO);
+        app.logEvent(event2, EventType.ARCHIVE);
 
         ctx.close();
     }

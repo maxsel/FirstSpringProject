@@ -21,6 +21,7 @@
         <property name="locations">
             <list>
                 <value>classpath:client.properties</value>
+                <value>classpath:jdbc.properties</value>
             </list>
         </property>
         <property name="ignoreResourceNotFound" value="true" />
@@ -39,6 +40,7 @@
     <util:map id="loggerMap">
         <entry key="INFO" value-ref="consoleEventLogger" />
         <entry key="ERROR" value-ref="combinedEventLogger" />
+        <entry key="ARCHIVE" value-ref="dbLogger" />
     </util:map>
 
     <bean id="app" class="ua.epam.spring.core.App">
@@ -64,5 +66,16 @@
     <bean id="stataspect" class="ua.epam.spring.core.aspects.StatisticsAspect" destroy-method="destroy"/>
     <bean id="limitaspect" class="ua.epam.spring.core.aspects.LimitAspect">
         <property name="otherLogger" ref="fileEventLogger" />
+    </bean>
+
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.username}" />
+        <property name="password" value="${jdbc.password}" />
     </bean>
 </beans>
