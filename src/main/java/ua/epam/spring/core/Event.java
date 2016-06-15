@@ -1,7 +1,9 @@
 package ua.epam.spring.core;
 
 import java.text.DateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Random;
 
 /**
@@ -34,5 +36,10 @@ public class Event {
                 ", msg='" + msg + '\'' +
                 ", date=" + df.format(date) +
                 '}';
+    }
+
+    public static boolean isDay() {
+        int hour = GregorianCalendar.getInstance().get(Calendar.HOUR_OF_DAY);
+        return hour >= 8 && hour <= 17;
     }
 }

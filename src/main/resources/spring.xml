@@ -26,7 +26,7 @@
     </bean>
 
     <bean id="client" class="ua.epam.spring.core.beans.Client"
-          p:greeting="${greeting}">
+          p:greeting="#{ systemEnvironment['USER'] }">
         <constructor-arg index="0" value="${id}" />
         <constructor-arg value="${name}" />
     </bean>
@@ -38,7 +38,7 @@
 
     <bean id="app" class="ua.epam.spring.core.App">
         <constructor-arg ref="client"/>
-        <constructor-arg ref="cacheFileEventLogger"/>
+        <constructor-arg ref="#{ T(ua.epam.spring.core.Event).isDay() ? 'fileEventLogger' : 'consoleEventLogger'}"/>
         <constructor-arg ref="loggerMap"/>
     </bean>
 
