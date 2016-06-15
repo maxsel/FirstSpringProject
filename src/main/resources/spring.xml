@@ -4,13 +4,18 @@
        xmlns:util="http://www.springframework.org/schema/util"
        xmlns:p="http://www.springframework.org/schema/p"
        xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="
  		http://www.springframework.org/schema/beans
  		http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
  		http://www.springframework.org/schema/util
- 		http://www.springframework.org/schema/util/spring-util-3.2.xsd">
+ 		http://www.springframework.org/schema/util/spring-util-3.2.xsd
+ 		http://www.springframework.org/schema/aop
+ 		http://www.springframework.org/schema/aop/spring-aop-3.2.xsd">
 
     <import resource="loggers.xml"/>
+
+    <aop:aspectj-autoproxy />
 
     <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
@@ -54,4 +59,10 @@
 
     <bean id="monitor" class="ua.epam.spring.core.util.Monitor"/>
     <bean id="awared" class="ua.epam.spring.core.util.AwareBean" init-method="init"/>
+
+    <!--<bean id="logaspect" class="ua.epam.spring.core.aspects.LoggingAspect" />-->
+    <bean id="stataspect" class="ua.epam.spring.core.aspects.StatisticsAspect" destroy-method="destroy"/>
+    <bean id="limitaspect" class="ua.epam.spring.core.aspects.LimitAspect">
+        <property name="otherLogger" ref="fileEventLogger" />
+    </bean>
 </beans>

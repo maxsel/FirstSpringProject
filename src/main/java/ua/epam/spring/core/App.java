@@ -15,6 +15,8 @@ public class App {
     private EventLogger defaultLogger;
     private Map<EventType, EventLogger> loggers;
 
+    public App() {}
+
     public App(Client client, EventLogger defaultLogger, Map<EventType, EventLogger> loggers) {
         this.client = client;
         this.defaultLogger = defaultLogger;
@@ -47,5 +49,9 @@ public class App {
 
         app.logEvent(event1, EventType.INFO);
         app.logEvent(event2, EventType.ERROR);
+        app.logEvent(event2, EventType.INFO);
+        app.logEvent(event2, EventType.INFO);
+
+        ctx.close();
     }
 }
