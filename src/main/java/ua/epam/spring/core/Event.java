@@ -21,6 +21,14 @@ public class Event {
         this.df = df;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public String getMsg() {
         return msg;
     }
